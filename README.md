@@ -5,10 +5,16 @@
 A collection of popular musical effects pedals that a user can view, add to, and explore. It will have a homepage with links to view the entire list or search for a specific pedal, a starter page with basic information on effects pedals, a pageto add a pedal, and a page to pull a random pedal from the list and return it. There will also be links to each individual pedal that is accessed from the list.
 
 ## Wireframes
+![Mobile Wireframe](assets/wireframe-mobile.png)
 
+![Desktop Home](assets/wireframe-home.png)
+
+![Desktop List](assets/wireframe-list.png)
+
+![Desktop Pdeal](assets/wireframe-pedal.png)
 
 ## Component Hierarchy
-![Component Hierarchy](assests/component-hierarchy.png)
+![Component Hierarchy](assets/component-hierarchy.png)
 
 ## API and Data Sample
 
