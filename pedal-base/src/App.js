@@ -1,10 +1,12 @@
 import "./App.css";
 import StarterPage from "./components/StarterPage.js";
 import PedalList from "./components/PedalList.js";
+import Pedal from "./components/Pedal.js";
 import { Link, Route } from "react-router-dom";
 
+
 function App() {
-  return (
+    return (
     <div className="App">
       <nav>
         <Link to="/">Home</Link>
@@ -26,7 +28,12 @@ function App() {
 
         </Route> 
         <Route path="/pedallist" exact>
-          <PedalList />
+          <PedalList  />
+
+        </Route> 
+
+        <Route path="/pedal/:id" exact>
+          <Pedal />
 
         </Route> 
     </div>
