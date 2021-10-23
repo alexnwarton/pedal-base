@@ -1,11 +1,27 @@
 import "./App.css";
 import StarterPage from "./components/StarterPage.js";
+import RandomPedal from "./components/RandomPedal.js";
 import PedalList from "./components/PedalList.js";
 import Pedal from "./components/Pedal.js";
 import { Link, Route } from "react-router-dom";
 
+import axios from "axios";
+import { useEffect, useState } from "react";
+
+const apiKey = process.env.REACT_APP_API_KEY;
+const apiUrl = `https://api.airtable.com/v0/appCDpBxh0nbdoKIN/Pedals?api_key=${apiKey}`;
 
 function App() {
+    const [pedals, setPedals] = useState([]);
+
+    useEffect(() => {
+      const fetchPedals = async () => {
+        const resp = await axios.get(apiUrl);
+        setPedals(resp.data.records); 
+      }
+      fetchPedals();
+    }, []);
+
     return (
     <div className="App">
       <nav>
@@ -26,9 +42,16 @@ function App() {
       <Route path="/about" exact>
           <StarterPage />
 
-        </Route> 
+      </Route> 
+
+      <Route path="/random" exact>
+          <RandomPedal pedals={pedals}/>
+
+      </Route> 
+
+
         <Route path="/pedallist" exact>
-          <PedalList  />
+          <PedalList pedals={pedals} />
 
         </Route> 
 

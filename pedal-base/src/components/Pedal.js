@@ -1,7 +1,7 @@
 import axios from "axios";
 import Card from "react-bootstrap/Card";
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect, useState  } from "react";
 
 const apiKey = process.env.REACT_APP_API_KEY;
 
@@ -50,12 +50,12 @@ const Pedal = () => {
 	return (
 		<Card> {pedal ? 
 
-		<Card.Body>
-			<Card.Title>{pedalManufacturer} {pedalName}</Card.Title>
-			<Card.Img src={pedalImage}/>
-			<Card.Text>{pedalDescription}</Card.Text>
-			<Card.Link href={pedalLink}>See More</Card.Link>	
-		</Card.Body> : "loading"}
+			<Card.Body>
+				<Card.Title>{pedalManufacturer} {pedalName}</Card.Title>
+				<Card.Img src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
+				<Card.Text>{pedalDescription}</Card.Text>
+				<Card.Link href={pedalLink}>See More</Card.Link>	
+			</Card.Body> : "loading"}
 			
 		
 		</Card>
