@@ -1,18 +1,63 @@
+import axios from "axios";
 import Card from "react-bootstrap/Card";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-const Pedal = ({ pedal, test }) => {
+const apiKey = process.env.REACT_APP_API_KEY;
+
+const Pedal = () => {
+	const [pedal, setPedal] = useState([]);
 	const [pedalName, setPedalName] = useState("");
-	console.log(pedal);
-	console.log(test);
+	const [pedalManufacturer, setPedalManufacturer] = useState("");
+	const [pedalType, setPedalType] = useState("");
+	const [pedalImage, setPedalImage] = useState("");
+	const [pedalDescription, setPedalDescription] = useState("");
+	const [pedalLink, setPedalLink] = useState("");
 	let pedalId = useParams();
-	 console.log(pedalId);
-	 console.log(pedalName);
+
+	const apiUrl = `https://api.airtable.com/v0/appCDpBxh0nbdoKIN/Pedals/${pedalId.id}/?api_key=${apiKey}`;
+
+	
+	useEffect(() => {
+		const fetchPedals = async () => {
+			const resp = await axios.get(apiUrl);
+			setPedal(resp.data.fields);			
+		}
+		fetchPedals();
+		
+	}, []);
+
+	useEffect(() => {
+		const populatePedal = (pedal) => {
+			setPedalName(pedal.name);
+			setPedalManufacturer(pedal.manufacturer);
+			setPedalType(pedal.type);
+			setPedalImage(pedal.image);
+			setPedalDescription(pedal.description);
+			setPedalLink(pedal.link);
+
+			return pedalName;
+		}
+
+		populatePedal(pedal);
+		
+
+	}, [pedal])
+	
+	
+
 
 	return (
-		<Card>
-			<Card.Title>pedals</Card.Title>
+		<Card> {pedal ? 
+
+		<Card.Body>
+			<Card.Title>{pedalManufacturer} {pedalName}</Card.Title>
+			<Card.Img src={pedalImage}/>
+			<Card.Text>{pedalDescription}</Card.Text>
+			<Card.Link href={pedalLink}>See More</Card.Link>	
+		</Card.Body> : "loading"}
+			
+		
 		</Card>
 	)
 }
