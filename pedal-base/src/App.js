@@ -1,12 +1,14 @@
+import axios from "axios";
 import "./App.css";
 import StarterPage from "./components/StarterPage.js";
+import PedalForm from "./components/PedalForm.js";
 import RandomPedal from "./components/RandomPedal.js";
 import PedalList from "./components/PedalList.js";
 import Pedal from "./components/Pedal.js";
+import { useEffect, useState } from "react";
 import { Link, Route } from "react-router-dom";
 
-import axios from "axios";
-import { useEffect, useState } from "react";
+
 
 const apiKey = process.env.REACT_APP_API_KEY;
 const apiUrl = `https://api.airtable.com/v0/appCDpBxh0nbdoKIN/Pedals?api_key=${apiKey}`;
@@ -41,6 +43,11 @@ function App() {
 
       <Route path="/about" exact>
           <StarterPage />
+
+      </Route> 
+
+      <Route path="/addpedal" exact>
+          <PedalForm />
 
       </Route> 
 

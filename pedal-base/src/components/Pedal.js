@@ -52,6 +52,7 @@ const Pedal = () => {
 
 			<Card.Body>
 				<Card.Title>{pedalManufacturer} {pedalName}</Card.Title>
+				<Card.Subtitle>{pedalType}</Card.Subtitle>
 				<Card.Img src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
 				<Card.Text>{pedalDescription}</Card.Text>
 				<Card.Link href={pedalLink}>See More</Card.Link>	
