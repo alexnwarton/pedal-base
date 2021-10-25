@@ -2,7 +2,7 @@ import Pedal from "./Pedal.js";
 import { Link, Route } from "react-router-dom";
 
 const PedalList = ({ pedals }) => {
-
+	console.log(pedals);
 	return (
 
 		<div>

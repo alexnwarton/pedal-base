@@ -8,6 +8,7 @@ import PedalList from "./components/PedalList.js";
 import Pedal from "./components/Pedal.js";
 import { useEffect, useState } from "react";
 import { Link, Route } from "react-router-dom";
+import SearchList from "./components/SearchList.js"
 
 
 
@@ -31,23 +32,26 @@ function App() {
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
 
-         <Link to="/addpedal">Add Pedal</Link>
+         <Link to="/add-pedal">Add Pedal</Link>
         <Link to="/random">Random</Link>
       </nav>
 
       <Route path="/" exact>
         <h1>Pedal Base</h1>
-      
-        <Search pedals={pedals}/>
-        <Link to="pedallist">Full Pedal List</Link>        
+        <Search pedals={pedals} />
+        <Link to="pedal-list">Full Pedal List</Link>        
       </Route>
+
+      < Route path="/pedal-list/search-results" exact>
+            <SearchList />
+        </Route> 
 
       <Route path="/about" exact>
           <StarterPage />
 
       </Route> 
 
-      <Route path="/addpedal" exact>
+      <Route path="/add-pedal" exact>
           <PedalForm />
 
       </Route> 
@@ -58,7 +62,7 @@ function App() {
       </Route> 
 
 
-        <Route path="/pedallist" exact>
+        <Route path="/pedal-list" exact>
           <PedalList pedals={pedals} />
 
         </Route> 
