@@ -1,5 +1,6 @@
 import axios from "axios";
 import "./App.css";
+import Search from "./components/Search.js";
 import StarterPage from "./components/StarterPage.js";
 import PedalForm from "./components/PedalForm.js";
 import RandomPedal from "./components/RandomPedal.js";
@@ -36,8 +37,8 @@ function App() {
 
       <Route path="/" exact>
         <h1>Pedal Base</h1>
-        <input type="text" placeholder="Search Pedals"/>
-        <input type="submit" value="Search"/>
+      
+        <Search pedals={pedals}/>
         <Link to="pedallist">Full Pedal List</Link>        
       </Route>
 

@@ -1,6 +1,6 @@
-import RandomPedal from "./RandomPedal.js";
+//import RandomPedal from "./RandomPedal.js";
 import Pedal from "./Pedal.js";
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 import { Link, Route } from "react-router-dom";
 
 const PedalList = ({ pedals }) => {
