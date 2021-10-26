@@ -9,46 +9,32 @@ const RandomPedal = ({ pedals, setPedals }) => {
 	const [pedalImage, setPedalImage] = useState("");
 	const [pedalDescription, setPedalDescription] = useState("");
 	const [pedalLink, setPedalLink] = useState("");
-	const [randomPedals, setRandomPedals] = useState("");
-	 
-
-	
-
-	// const memoisedPedals = useMemo(() => {
- //      setPedals(pedals);
- //      getRandomPedal(pedals);
- //    }, [pedals])
-
 
 	useEffect(() => {
 		const getRandomPedal = (pedals) => {
 		let randomNum = Math.floor(Math.random() * pedals.length - 1);
 		let selectedPedal = pedals[randomNum];
-		window.localStorage.setItem("randomPedals", randomPedals);
 		return selectedPedal;
 	}
-		let selectedRandom = getRandomPedal(pedals);
-		setPedalName(selectedRandom.fields.name);
-		setPedalManufacturer(selectedRandom.fields.manufacturer);
-		setPedalType(selectedRandom.fields.type);
-		setPedalImage(selectedRandom.fields.image);
-		setPedalDescription(selectedRandom.fields.description);
-		setPedalLink(selectedRandom.fields.link);
-		setRandomPedals(window.localStorage.getItem("randomPedals"));
+		if(pedals.length > 0 ){
+			let selectedRandom = getRandomPedal(pedals);
+			setPedalName(selectedRandom.fields.name);
+			setPedalManufacturer(selectedRandom.fields.manufacturer);
+			setPedalType(selectedRandom.fields.type);
+			setPedalImage(selectedRandom.fields.image);
+			setPedalDescription(selectedRandom.fields.description);
+			setPedalLink(selectedRandom.fields.link);
+		}
 	}, [pedals])
 
-	useEffect(() => {
-		window.localStorage.setItem("randomPedals", randomPedals);
-		console.log(randomPedals);
-	}, [pedals])
-
+	
 	return (
-		<Card> {pedals ? 
+		<Card style={{ width: "40rem" }}> {pedals ? 
 
 			<Card.Body>
 				<Card.Title>{pedalManufacturer} {pedalName}</Card.Title>
 				<Card.Subtitle>{pedalType}</Card.Subtitle>
-				<Card.Img src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
+				<Card.Img variant="right" style={{ width: "16rem" }} src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
 				<Card.Text>{pedalDescription}</Card.Text>
 				<Card.Link href={pedalLink}>See More</Card.Link>	
 			</Card.Body> : "loading"}

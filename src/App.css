@@ -39,19 +39,39 @@ a {
 a:hover {
   background-color: peachpuff;
   color: slategray;
-  padding: 1rem;
+  padding: 1%;
   border-radius: 20px;
+}
+
+.nav.navbar-expand
+
+.navLink {
+  padding:  1%;
+  width: 300%;
+  flex-wrap: nowrap;
 }
 
 input {
   background-color: papayawhip;
   border-radius: 20px;
-  width: 20%;
-  height: 2rem;
+  width: 25%;
+  height: 3rem;
+  border: none;
+  font-size: 200%;
 }
 
 .homePage {
   margin: 10%;
   font-size: 400%;
+}
 
+.starterPage {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.startHeader {
+  font-size: 400%;
+  width: 100%;
+  display: flex;
 }

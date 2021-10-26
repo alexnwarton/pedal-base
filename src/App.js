@@ -22,8 +22,6 @@ function App() {
     const [pedals, setPedals] = useState([]);
     const [query, setQuery] = useState("");
 
-  //console.log(pedals);
-
   const fuse = new Fuse(pedals, {
     keys: [
     "id", 
@@ -57,18 +55,18 @@ function App() {
 
     return (
     <div className="App">
-      <Navbar bg="transparent" >
+      <Navbar bg="transparent">
        <Nav defaultActiveKey="/">
-        <Link to="/">Home</Link>
+        <Link to="/" className="navLink">Home</Link>
         
        
-        <Link to="/about">About</Link>
+        <Link to="/about" className="navLink">About</Link>
         
         
-        <Link to="/add-pedal">Add Pedal</Link>
+        <Link to="/add-pedal" className="navLink">Add Pedal</Link>
        
        
-        <Link to="/random">Random</Link>
+        <Link to="/random" className="navLink">Random</Link>
         </Nav>
       </Navbar>
 

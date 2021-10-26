@@ -1,8 +1,8 @@
 const StarterPage = () => {
 	return (
 
-		<div>
-			<h1>About Pedal Base</h1>
+		<div className="starterPage">
+			<h1 className="startHeader">About Pedal Base</h1>
 			<h3>What is Pedal Base?</h3>
 			<p>Pedal Base is a collection of popular effects pedals. Users can search for pedals to find descriptions of functionality and sound. They can also add their own pedals to the collection.</p>
 			<h3>What is an "effects pedal"?</h3>

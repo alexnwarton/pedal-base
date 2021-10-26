@@ -10,7 +10,7 @@ const Pedal = () => {
 	const [pedalName, setPedalName] = useState("");
 	const [pedalManufacturer, setPedalManufacturer] = useState("");
 	const [pedalType, setPedalType] = useState("");
-	const [pedalImage, setPedalImage] = useState("");
+	const [pedalImage, setPedalImage] = useState(""); 
 	const [pedalDescription, setPedalDescription] = useState("");
 	const [pedalLink, setPedalLink] = useState("");
 	let pedalId = useParams();
@@ -53,7 +53,7 @@ const Pedal = () => {
 			<Card.Body>
 				<Card.Title>{pedalManufacturer} {pedalName}</Card.Title>
 				<Card.Subtitle>{pedalType}</Card.Subtitle>
-				<Card.Img variant="right" stlye={{ width: "5rem" }} src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
+				<Card.Img variant="right" style={{ width: "16rem" }} src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
 				<Card.Text>{pedalDescription}</Card.Text>
 				<Card.Link href={pedalLink}>See More</Card.Link>	
 			</Card.Body> : "loading"}
