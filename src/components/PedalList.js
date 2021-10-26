@@ -6,7 +6,7 @@ const PedalList = ({ pedals }) => {
 
 		<div>
 			{pedals ? pedals.map((pedal) => (
-				<div>
+				<div key={pedal.id}>
 					<Link key={pedal.id} to={`/pedal/${pedal.id}`}>
 						{pedal.fields.manufacturer}  {pedal.fields.name}
 						<br />

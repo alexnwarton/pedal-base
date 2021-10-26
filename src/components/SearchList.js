@@ -1,18 +1,23 @@
 import { Link } from "react-router-dom";
-//import { useEffect, useState } from "react";
+//import { useEffect} from "react";
 
-const PedalList = ({ pedals }) => {
-	// const [searchPedals, setSearchPedals] = useState(localStorage.getItem("pedals") === true)
+const SearchList = ({ pedals }) => {
+
 	// useEffect(() => {
-	// 	localStorage.setItem("pedals", pedals);
-	// }, [searchPedals])
+		
+	
+	// 	pedals = localStorage.getItem("pushPedals");
+		
+	// }, [])
+	
+	
 	
 	return (
 
 		<div>
 			<h1>Pedals!</h1>
 			{pedals ? pedals.map((pedal) => (
-				<div>
+				<div key={pedal.id}>
 					<Link key={pedal.id} to={`/pedal/${pedal.id}`}>
 						{pedal.fields.manufacturer}  {pedal.fields.name}
 						<br />
@@ -23,4 +28,4 @@ const PedalList = ({ pedals }) => {
 	)
 }
 
-export default PedalList;
+export default SearchList;

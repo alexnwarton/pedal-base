@@ -36,7 +36,9 @@ function App() {
 
   const pushPedals = [];
   results.map((result) => {
-    pushPedals.push(result.item);
+    if(result.score <= 0.1){
+      pushPedals.push(result.item);   
+    }
     return pushPedals;
   })
 
@@ -45,13 +47,13 @@ function App() {
   }
   
 
-    useEffect(() => {
-      const fetchPedals = async () => {
-        const resp = await axios.get(apiUrl);
-        setPedals(resp.data.records); 
-      }
-      fetchPedals();
-    }, []);
+  useEffect(() => {
+    const fetchPedals = async () => {
+      const resp = await axios.get(apiUrl);
+      setPedals(resp.data.records); 
+    }
+    fetchPedals();
+  }, []);
 
     return (
     <div className="App">
@@ -72,6 +74,7 @@ function App() {
 
       <Route path="/" exact>
         <h1 className="homePage">Pedal Base</h1>
+        <img src="pedal-base/assets/pedalbase-icon.png" alt="Pedal Base icon"/>
         <input type="text" placeholder="Search Pedals" value={query} onChange={(ev) => searchPedals(ev.target.value)}/>
          <Link to="/pedal-list/search-results">
           Search
@@ -81,7 +84,7 @@ function App() {
       </Route>
 
       <Route path="/pedal-list/search-results">
-          <SearchList pedals={pushPedals}/>
+          <SearchList pedals={pushPedals} key={pushPedals.id}/>
       </Route>
 
       <Route path="/about" exact>
@@ -95,7 +98,7 @@ function App() {
       </Route> 
 
       <Route path="/random" exact>
-          <RandomPedal pedals={pedals} setPedals={setPedals}/>
+          <RandomPedal pedals={pedals}/>
 
       </Route> 
 

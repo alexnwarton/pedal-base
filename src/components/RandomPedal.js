@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
 
 
-const RandomPedal = ({ pedals, setPedals }) => {
+const RandomPedal = ({ pedals }) => {
 	const [pedalName, setPedalName] = useState("");
 	const [pedalManufacturer, setPedalManufacturer] = useState("");
 	const [pedalType, setPedalType] = useState("");
