@@ -42,8 +42,6 @@ function App() {
     return pushPedals;
   })
 
-  console.log(pushPedals);
-
   const searchPedals = (ev) => {
     setQuery(ev);
   }
@@ -59,7 +57,7 @@ function App() {
 
     return (
     <div className="App">
-      <Navbar bg="light" >
+      <Navbar bg="transparent" >
        <Nav defaultActiveKey="/">
         <Link to="/">Home</Link>
         
@@ -75,7 +73,7 @@ function App() {
       </Navbar>
 
       <Route path="/" exact>
-        <h1>Pedal Base</h1>
+        <h1 className="homePage">Pedal Base</h1>
         <input type="text" placeholder="Search Pedals" value={query} onChange={(ev) => searchPedals(ev.target.value)}/>
          <Link to="/pedal-list/search-results">
           Search
@@ -105,7 +103,7 @@ function App() {
 
 
         <Route path="/pedal-list" exact>
-          <PedalList pedals={pedals} />
+          <PedalList pedals={pedals} key={pedals.id}/>
 
         </Route> 
 

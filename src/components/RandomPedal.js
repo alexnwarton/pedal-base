@@ -9,13 +9,10 @@ const RandomPedal = ({ pedals, setPedals }) => {
 	const [pedalImage, setPedalImage] = useState("");
 	const [pedalDescription, setPedalDescription] = useState("");
 	const [pedalLink, setPedalLink] = useState("");
+	const [randomPedals, setRandomPedals] = useState("");
 	 
 
-	const getRandomPedal = (pedals) => {
-		let randomNum = Math.floor(Math.random() * pedals.length - 1);
-		let selectedPedal = pedals[randomNum];
-		return selectedPedal;
-	}
+	
 
 	// const memoisedPedals = useMemo(() => {
  //      setPedals(pedals);
@@ -24,6 +21,12 @@ const RandomPedal = ({ pedals, setPedals }) => {
 
 
 	useEffect(() => {
+		const getRandomPedal = (pedals) => {
+		let randomNum = Math.floor(Math.random() * pedals.length - 1);
+		let selectedPedal = pedals[randomNum];
+		window.localStorage.setItem("randomPedals", randomPedals);
+		return selectedPedal;
+	}
 		let selectedRandom = getRandomPedal(pedals);
 		setPedalName(selectedRandom.fields.name);
 		setPedalManufacturer(selectedRandom.fields.manufacturer);
@@ -31,6 +34,12 @@ const RandomPedal = ({ pedals, setPedals }) => {
 		setPedalImage(selectedRandom.fields.image);
 		setPedalDescription(selectedRandom.fields.description);
 		setPedalLink(selectedRandom.fields.link);
+		setRandomPedals(window.localStorage.getItem("randomPedals"));
+	}, [pedals])
+
+	useEffect(() => {
+		window.localStorage.setItem("randomPedals", randomPedals);
+		console.log(randomPedals);
 	}, [pedals])
 
 	return (
