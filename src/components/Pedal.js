@@ -25,7 +25,7 @@ const Pedal = () => {
 		}
 		fetchPedals();
 		
-	}, []);
+	}, [apiUrl]);
 
 	useEffect(() => {
 		const populatePedal = (pedal) => {
@@ -42,18 +42,18 @@ const Pedal = () => {
 		populatePedal(pedal);
 		
 
-	}, [pedal])
+	}, [pedal, pedalName])
 	
 	
 
 
 	return (
-		<Card> {pedal ? 
+		<Card style={{ width: "40rem" }}> {pedal ? 
 
 			<Card.Body>
 				<Card.Title>{pedalManufacturer} {pedalName}</Card.Title>
 				<Card.Subtitle>{pedalType}</Card.Subtitle>
-				<Card.Img src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
+				<Card.Img variant="right" stlye={{ width: "5rem" }} src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
 				<Card.Text>{pedalDescription}</Card.Text>
 				<Card.Link href={pedalLink}>See More</Card.Link>	
 			</Card.Body> : "loading"}

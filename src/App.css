@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.card-img {
+  width:  40%;
+  height: 30rem;
+  object-fit: contain;
+}

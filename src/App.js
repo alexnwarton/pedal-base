@@ -1,7 +1,9 @@
 import axios from "axios";
 import Fuse from "fuse.js";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-//import Search from "./components/Search.js";
 import StarterPage from "./components/StarterPage.js";
 import PedalForm from "./components/PedalForm.js";
 import RandomPedal from "./components/RandomPedal.js";
@@ -37,6 +39,7 @@ function App() {
   const pushPedals = [];
   results.map((result) => {
     pushPedals.push(result.item);
+    return pushPedals;
   })
 
   console.log(pushPedals);
@@ -56,31 +59,28 @@ function App() {
 
     return (
     <div className="App">
-      <nav>
+      <Navbar bg="light" >
+       <Nav defaultActiveKey="/">
         <Link to="/">Home</Link>
+        
+       
         <Link to="/about">About</Link>
-
-         <Link to="/add-pedal">Add Pedal</Link>
+        
+        
+        <Link to="/add-pedal">Add Pedal</Link>
+       
+       
         <Link to="/random">Random</Link>
-      </nav>
+        </Nav>
+      </Navbar>
 
       <Route path="/" exact>
         <h1>Pedal Base</h1>
         <input type="text" placeholder="Search Pedals" value={query} onChange={(ev) => searchPedals(ev.target.value)}/>
-        {/*<input type="submit" value="Search" onClick={() => 
-            <Route path="/pedal-list/search-results" exact>
-            <SearchList pedals={pushPedals}/>
-        </Route> 
-          }
-         />*/}
-         
          <Link to="/pedal-list/search-results">
-          
           Search
          </Link>
 
-
-        {/*<Search pedals={pedals}/>*/}
         <Link to="pedal-list">Full Pedal List</Link>        
       </Route>
 
@@ -99,7 +99,7 @@ function App() {
       </Route> 
 
       <Route path="/random" exact>
-          <RandomPedal pedals={pedals}/>
+          <RandomPedal pedals={pedals} setPedals={setPedals}/>
 
       </Route> 
 
