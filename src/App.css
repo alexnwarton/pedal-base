@@ -334,7 +334,7 @@ p {
 
   p {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     text-align: left;
     margin-left: 2%;
     margin-bottom: 5%;
@@ -633,7 +633,6 @@ p {
   }
 
 
-
   .card-img {
     width:  40%;
     height: 30rem;
@@ -682,9 +681,11 @@ p {
   }
 
   h3 {
-    display: inline;
-    margin-left: 2%;
+    display: flex;
+    margin-left: -1%;
     font-size: 250%;
+    justify-content: flex-start;
+    width: 100%;
   }
 
   .homePage {
@@ -722,21 +723,25 @@ p {
 
   p {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
     text-align: left;
-    margin-left: 2%;
+    margin-left: -5%;
     margin-bottom: 5%;
+    margin-right: 5%;
     flex-wrap: wrap;
-    width: 50%;
+    width: 90%;
     font-size: 150%;
   }
+
 
   .startHeader {
     font-size: 400%;
     width: 90%;
     display: flex;
     margin-right: 20%;
-    margin-left: 2%;
+    margin-left: 9%;
     margin-bottom: 4%;
     margin-top: 1%;
   }
@@ -774,11 +779,11 @@ p {
 /* Start 1200px query */
 @media (min-width:  1200px) {
   a {
-  text-decoration: none;
-  color: papayawhip;
-  margin: 1em;
-  align-content: center;
-  font-size: 200%;
+    text-decoration: none;
+    color: papayawhip;
+    margin: 1em;
+    align-content: center;
+    font-size: 200%;
   }
 
   a:hover {
@@ -786,6 +791,7 @@ p {
     color: slategray;
     padding: 1%;
     border-radius: 20px;
+    width: 10%;
   }
 
   .App {
@@ -877,9 +883,10 @@ p {
   }
 
   h3 {
-    display: inline;
-    margin-left: 2%;
+    display: flex;
+    margin-left: 5%;
     font-size: 250%;
+    width: 100%;
   }
 
   .homePage {
@@ -913,16 +920,27 @@ p {
     padding:  1%;
     width: 20%;
     flex-wrap: nowrap;
+    margin-left: 5%;
+  }
+
+  .navLink:hover {
+    padding:  1%;
+    width: 20%;
+    flex-wrap: nowrap;
+    margin-left: 5%;
   }
 
   p {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
     text-align: left;
-    margin-left: 2%;
+    margin-left: 5%;
     margin-bottom: 5%;
+    margin-right: 5%;
     flex-wrap: wrap;
-    width: 50%;
+    width: 80%;
     font-size: 150%;
   }
 
@@ -931,7 +949,7 @@ p {
     width: 90%;
     display: flex;
     margin-right: 20%;
-    margin-left: 2%;
+    margin-left: 5%;
     margin-bottom: 4%;
     margin-top: 1%;
   }
@@ -940,7 +958,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
   }
 
   .starterLink {
@@ -956,6 +975,7 @@ p {
   .starterLink:hover {
     margin-right: 65%;
     justify-content: center;
+    width: 15%;
   }
  
 }
