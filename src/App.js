@@ -21,6 +21,7 @@ const apiUrl = `https://api.airtable.com/v0/appCDpBxh0nbdoKIN/Pedals?api_key=${a
 function App() {
     const [pedals, setPedals] = useState([]);
     const [query, setQuery] = useState("");
+    
 
   const fuse = new Fuse(pedals, {
     keys: [
