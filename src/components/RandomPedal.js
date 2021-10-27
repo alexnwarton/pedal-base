@@ -28,6 +28,25 @@ const RandomPedal = ({ pedals }) => {
 	}, [pedals])
 
 	
+	const getAnotherPedal = (pedals) => {
+		const getRandomPedal = (pedals) => {
+			let randomNum = Math.floor(Math.random() * pedals.length - 1);
+			let selectedPedal = pedals[randomNum];
+			return selectedPedal;
+		}
+		if(pedals.length > 0 ){
+			let selectedRandom = getRandomPedal(pedals);
+			setPedalName(selectedRandom.fields.name);
+			setPedalManufacturer(selectedRandom.fields.manufacturer);
+			setPedalType(selectedRandom.fields.type);
+			setPedalImage(selectedRandom.fields.image);
+			setPedalDescription(selectedRandom.fields.description);
+			setPedalLink(selectedRandom.fields.link);
+		}
+	}
+	
+
+	
 	return (
 		<Card> {pedals ? 
 
@@ -36,7 +55,8 @@ const RandomPedal = ({ pedals }) => {
 				<Card.Subtitle>{pedalType}</Card.Subtitle>
 				<Card.Text>{pedalDescription}</Card.Text>
 				<Card.Img variant="right" style={{ width: "16rem" }} src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
-				<Card.Link href={pedalLink}>See More</Card.Link>	
+				<Card.Link href={pedalLink}>See More</Card.Link>
+				<button onClick={() => getAnotherPedal(pedals)}>Get another pedal</button>	
 			</Card.Body> : "loading"}
 				
 		

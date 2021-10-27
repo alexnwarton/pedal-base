@@ -44,12 +44,30 @@ const PedalForm = () => {
 
 	return (
 		<form onSubmit={addPedal}>
+			<h1>Pedal Name:</h1>
 			<input type="text" placeholder="Pedal Name" onChange={(ev) => setName(ev.target.value)}/>
+			<br />
+			<br />
+			<h1>Pedal Manufacturer:</h1>
 			<input type="text" placeholder="Pedal Manufacturer" onChange={(ev) => setManufacturer(ev.target.value)}/>
+			<br />
+			<br />
+			<h1>Pedal Type:</h1>
 			<input type="text" placeholder="Pedal Type" onChange={(ev) => setType(ev.target.value)}/>
-			<input type="text" placeholder="Pedal Image" onChange={(ev) => setImage(ev.target.value)}/>
+			<br />
+			<br />
+			<h1>Pedal Image:</h1>
+			<input type="url" placeholder="Pedal Image" onChange={(ev) => setImage(ev.target.value)}/>
+			<br />
+			<br />
+			<h1>Pedal Description:</h1>
 			<input type="text" placeholder="Pedal Description" onChange={(ev) => setDescription(ev.target.value)}/>
-			<input type="text" placeholder="Pedal Link" onChange={(ev) => setLink(ev.target.value)}/>
+			<br />
+			<br />
+			<h1>Pedal Link:</h1>
+			<input type="url" placeholder="Pedal Link" onChange={(ev) => setLink(ev.target.value)}/>
+			<br />
+			<br />
 			<input className="formSubmit" type="submit" value="Add Pedal"/>
 
 		</form>
