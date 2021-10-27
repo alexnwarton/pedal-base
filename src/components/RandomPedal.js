@@ -9,6 +9,7 @@ const RandomPedal = ({ pedals }) => {
 	const [pedalImage, setPedalImage] = useState("");
 	const [pedalDescription, setPedalDescription] = useState("");
 	const [pedalLink, setPedalLink] = useState("");
+	const [pedalModel, setPedalModel] = useState("");
 
 	useEffect(() => {
 		const getRandomPedal = (pedals) => {
@@ -24,6 +25,9 @@ const RandomPedal = ({ pedals }) => {
 			setPedalImage(selectedRandom.fields.image);
 			setPedalDescription(selectedRandom.fields.description);
 			setPedalLink(selectedRandom.fields.link);
+			if(selectedRandom.fields.model) {
+				setPedalModel(selectedRandom.fields.model);
+			}
 		}
 	}, [pedals])
 
@@ -42,6 +46,9 @@ const RandomPedal = ({ pedals }) => {
 			setPedalImage(selectedRandom.fields.image);
 			setPedalDescription(selectedRandom.fields.description);
 			setPedalLink(selectedRandom.fields.link);
+			if(selectedRandom.fields.model) {
+				setPedalModel(selectedRandom.fields.model);
+			}
 		}
 	}
 	
@@ -51,10 +58,14 @@ const RandomPedal = ({ pedals }) => {
 		<Card> {pedals ? 
 
 			<Card.Body>
-				<Card.Title>{pedalManufacturer} {pedalName}</Card.Title>
-				<Card.Subtitle>{pedalType}</Card.Subtitle>
+				<Card.Title>{pedalManufacturer} {pedalModel} {pedalName}</Card.Title>
+				<Card.Subtitle>Type: {pedalType}</Card.Subtitle>
 				<Card.Text>{pedalDescription}</Card.Text>
-				<Card.Img variant="right" style={{ width: "16rem" }} src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
+				<br />
+				<div className="cardImageContainer">
+					<Card.Img variant="right" src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
+				</div>
+				<br />
 				<Card.Link href={pedalLink}>See More</Card.Link>
 				<button onClick={() => getAnotherPedal(pedals)}>Get another pedal</button>	
 			</Card.Body> : "loading"}

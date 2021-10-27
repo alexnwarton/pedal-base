@@ -230,7 +230,7 @@ p {
     text-decoration: none;
     color: papayawhip;
     background-color: slategray;
-    margin: 1em;
+    margin: 1%;
     border:  none;
     align-content: center;
     font-size: 200%;
@@ -254,35 +254,45 @@ p {
     border: none;
   }
 
-  .card-img {
-    width:  40%;
-    height: 30rem;
-    object-fit: contain;
+  .cardImageContainer {
+    display: flex;
+    background-color: white;
+    border-radius: 30%;
+    width: 100%;
+    justify-content: center;
+    margin: auto 0;
   }
 
   .card-img-right {
-    width:  40%;
-    height: 30rem;
+    width:  10rem;
+    height: 20rem;
     object-fit: contain;
-    display: inline;
-    margin-right: 25%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
 
+  .card-link {
+    font-size: 200%;
+  }
 
   .card-subtitle {
-    font-size: 200%;
+    font-size: 150%;
     margin-bottom: 5%;
   }
 
   .card-text {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     text-align: left;
-    width: 30%;
-    margin-right: 10%;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .card-title {
-    font-size: 400%;
+    font-size: 200%;
   }
 
   form {

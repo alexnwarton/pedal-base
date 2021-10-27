@@ -58,7 +58,11 @@ const Pedal = () => {
 				<Card.Title>{pedalManufacturer} {pedalModel} {pedalName}</Card.Title>
 				<Card.Subtitle>Type: {pedalType}</Card.Subtitle>
 				<Card.Text>{pedalDescription}</Card.Text>
-				<Card.Img variant="right" style={{ width: "16rem" }} src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
+				<br />
+				<div className="cardImageContainer">
+					<Card.Img variant="right" src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
+				</div>
+				<br />
 				<Card.Link href={pedalLink}>See More</Card.Link>	
 			</Card.Body> : "loading"}
 			
