@@ -39,7 +39,7 @@ const PedalForm = () => {
 	}
 
 	if(redirectList) {
-		return <Redirect to="/pedal-list"/>
+		return <Redirect to="/"/>
 	}
 
 	return (

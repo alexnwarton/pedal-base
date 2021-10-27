@@ -74,7 +74,7 @@ function App() {
 
       <Route path="/" exact>
         <h1 className="homePage">Pedal Base</h1>
-        <img src="pedal-base/assets/pedalbase-icon.png" alt="Pedal Base icon"/>
+        <img className="logo" src="https://i.imgur.com/nLVUKXN.png" alt="Pedal Base icon"/>
         <input type="text" placeholder="Search Pedals" value={query} onChange={(ev) => searchPedals(ev.target.value)}/>
          <Link to="/pedal-list/search-results">
           Search

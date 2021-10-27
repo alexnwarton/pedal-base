@@ -16,6 +16,12 @@
   object-fit: contain;
 }
 
+.logo {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
 body {
    color: papayawhip;
   background-color: slategray;
@@ -60,8 +66,9 @@ input {
 }
 
 .homePage {
-  margin: 10%;
+  margin: 1%;
   font-size: 400%;
+  margin-bottom: 0;
 }
 
 .starterPage {
