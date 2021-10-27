@@ -34,9 +34,219 @@
 }
 
 body {
-   color: papayawhip;
+  color: papayawhip;
   background-color: slategray;
   font-family: "Josefin Slab", serif;
+}
+
+.card {
+  color: papayawhip;
+  height: 100%;
+  background-color: slategray;
+  align-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.card-text {
+  display: inline-flex;
+  text-align: left;
+  width: 30%;
+  margin-right: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: papayawhip;
+  margin: 1em;
+  align-content: center;
+  font-size: 200%;
+}
+
+a:hover {
+  background-color: peachpuff;
+  color: slategray;
+  padding: 1%;
+  border-radius: 20px;
+}
+
+.formSubmit {
+  text-decoration: none;
+  color: papayawhip;
+  background-color: slategray;
+  margin: 1em;
+  align-content: center;
+  font-size: 200%;
+}
+
+.formSubmit:hover {
+  background-color: peachpuff;
+  color: slategray;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+.navLink {
+  padding:  1%;
+  width: 20%;
+  flex-wrap: nowrap;
+}
+
+input {
+  background-color: papayawhip;
+  border-radius: 20px;
+  width: 25%;
+  height: 3rem;
+  border: none;
+  font-size: 200%;
+  text-align: center;
+}
+
+.homePage {
+  margin: 1%;
+  font-size: 400%;
+  margin-bottom: 0;
+}
+
+.starterPage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.startHeader {
+  font-size: 400%;
+  width: 90%;
+  display: flex;
+  margin-right: 20%;
+  margin-left: 2%;
+  margin-bottom: 4%;
+  margin-top: 1%;
+}
+
+h3 {
+  display: inline;
+  margin-left: 2%;
+  font-size: 250%;
+}
+
+p {
+  display: flex;
+  justify-content: flex-end;
+  text-align: left;
+  margin-left: 2%;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+  width: 50%;
+  font-size: 150%;
+}
+
+.starterLink {
+  display: inline-flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 100%;
+  margin: 0;
+  font-weight: bold;
+}
+
+.starterLink:hover {
+  margin-right: 65%;
+  justify-content: center;
+}
+
+@media (min-width:  576px) {
+
+  body {
+   width: 150%;
+    margin: 10%;
+  }
+
+  .homePage {
+  margin: 1%;
+  font-size: 400%;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+}
+
+@media (min-width:  768px) {
+
+body {
+   width: 150%;
+    margin: 10%;
+  }
+
+
+
+
+
+
+}
+
+@media (min-width:  992px) {
+
+
+
+
+
+
+
+
+}
+
+@media (min-width:  1200px) {
+
+  .App {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 400%;
+}
+
+.card-subtitle {
+  font-size: 200%;
+  margin-bottom: 5%;
+}
+
+.card-img {
+  width:  40%;
+  height: 30rem;
+  object-fit: contain;
+}
+
+.card-img-right {
+  width:  40%;
+  height: 30rem;
+  object-fit: contain;
+  display: inline;
+  margin-right: 25%;
+}
+
+.logo {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  color: papayawhip;
+  background-color: slategray;
+  font-family: "Josefin Slab", serif;
+  width: 100%;
 }
 
 .card {
@@ -45,7 +255,7 @@ body {
   background-color: slategray;
   align-content: center;
   margin-left: 15%;
-  /*border: none;*/
+  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -157,4 +367,9 @@ p {
 .starterLink:hover {
   margin-right: 65%;
   justify-content: center;
+}
+
+
+
+
 }

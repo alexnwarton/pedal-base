@@ -29,7 +29,7 @@ const RandomPedal = ({ pedals }) => {
 
 	
 	return (
-		<Card style={{ width: "80rem" }}> {pedals ? 
+		<Card> {pedals ? 
 
 			<Card.Body>
 				<Card.Title>{pedalManufacturer} {pedalName}</Card.Title>

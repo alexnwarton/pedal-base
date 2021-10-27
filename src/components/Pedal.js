@@ -52,7 +52,7 @@ const Pedal = () => {
 
 
 	return (
-		<Card style={{ width: "80rem" }}> {pedal ? 
+		<Card> {pedal ? 
 
 			<Card.Body>
 				<Card.Title>{pedalManufacturer} {pedalModel} {pedalName}</Card.Title>
