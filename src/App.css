@@ -87,6 +87,7 @@ button:hover {
   font-size: 400%;
 }
 
+
 .formSubmit {
   text-decoration: none;
   color: papayawhip;
@@ -124,6 +125,12 @@ input {
   border: none;
   font-size: 200%;
   text-align: center;
+}
+
+label {
+  font-size: 200%;
+  margin-right: 5%;
+  text-align: left;
 }
 
 .logo {
@@ -278,6 +285,17 @@ p {
     font-size: 400%;
   }
 
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .formInput {
+    width: 50%;
+    font-size: 120%;
+  }
+
   .formSubmit {
     text-decoration: none;
     color: papayawhip;
@@ -285,6 +303,8 @@ p {
     margin: 1em;
     align-content: center;
     font-size: 200%;
+    width: 50%;
+    height: 50%;
   }
 
   .formSubmit:hover {
@@ -292,6 +312,8 @@ p {
     color: slategray;
     border-radius: 20px;
     justify-content: center;
+    width: 50%;
+    height: 50%;
   }
 
   h3 {
@@ -325,6 +347,20 @@ p {
     text-align: center;
   }
 
+  label {
+    font-size: 200%;
+    margin-right: 5%;
+    text-align: left;
+  }
+
+.listHeader {
+    font-size: 300%;
+  }
+
+  .listResults {
+    font-size: 150%;
+  }
+
   .logo {
     width: 100%;
     display: flex;
@@ -352,6 +388,14 @@ p {
     flex-wrap: wrap;
     width: 75%;
     font-size: 125%;
+  }
+
+  .searchHeader {
+    font-size: 300%;
+  }
+
+  .searchResults {
+    font-size: 150%;
   }
 
   .startHeader {
