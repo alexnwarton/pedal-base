@@ -13,6 +13,7 @@ const Pedal = () => {
 	const [pedalImage, setPedalImage] = useState(""); 
 	const [pedalDescription, setPedalDescription] = useState("");
 	const [pedalLink, setPedalLink] = useState("");
+	const [pedalModel, setPedalModel] = useState("");
 	let pedalId = useParams();
 
 	const apiUrl = `https://api.airtable.com/v0/appCDpBxh0nbdoKIN/Pedals/${pedalId.id}/?api_key=${apiKey}`;
@@ -35,6 +36,9 @@ const Pedal = () => {
 			setPedalImage(pedal.image);
 			setPedalDescription(pedal.description);
 			setPedalLink(pedal.link);
+			if(pedal.model) {
+				setPedalModel(pedal.model);
+			}
 
 			return pedalName;
 		}
@@ -51,7 +55,7 @@ const Pedal = () => {
 		<Card style={{ width: "80rem" }}> {pedal ? 
 
 			<Card.Body>
-				<Card.Title>{pedalManufacturer} {pedalName}</Card.Title>
+				<Card.Title>{pedalManufacturer} {pedalModel} {pedalName}</Card.Title>
 				<Card.Subtitle>Type: {pedalType}</Card.Subtitle>
 				<Card.Text>{pedalDescription}</Card.Text>
 				<Card.Img variant="right" style={{ width: "16rem" }} src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>

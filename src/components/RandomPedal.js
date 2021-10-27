@@ -29,13 +29,13 @@ const RandomPedal = ({ pedals }) => {
 
 	
 	return (
-		<Card style={{ width: "40rem" }}> {pedals ? 
+		<Card style={{ width: "80rem" }}> {pedals ? 
 
 			<Card.Body>
 				<Card.Title>{pedalManufacturer} {pedalName}</Card.Title>
 				<Card.Subtitle>{pedalType}</Card.Subtitle>
-				<Card.Img variant="right" style={{ width: "16rem" }} src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
 				<Card.Text>{pedalDescription}</Card.Text>
+				<Card.Img variant="right" style={{ width: "16rem" }} src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
 				<Card.Link href={pedalLink}>See More</Card.Link>	
 			</Card.Body> : "loading"}
 				
