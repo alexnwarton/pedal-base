@@ -1,18 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap');
 
+a {
+  text-decoration: none;
+  color: papayawhip;
+  margin: 1em;
+  align-content: center;
+  font-size: 200%;
+}
+
+a:hover {
+  background-color: peachpuff;
+  color: slategray;
+  padding: 1%;
+  border-radius: 20px;
+}
+
 .App {
   text-align: center;
+  width:  100%;
 }
 
-
-.card-title {
-  font-size: 400%;
+body {
+  color: papayawhip;
+  background-color: slategray;
+  font-family: "Josefin Slab", serif;
 }
 
-.card-subtitle {
+button {
+  text-decoration: none;
+  color: papayawhip;
+  background-color: slategray;
+  margin: 1em;
+  border:  none;
+  align-content: center;
   font-size: 200%;
-  margin-bottom: 5%;
 }
+
+button:hover {
+  background-color: peachpuff;
+  color: slategray;
+  padding: 1%;
+  border-radius: 20px;
+}
+
+
+.card {
+  color: papayawhip;
+  height: 100%;
+  background-color: slategray;
+  align-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  border: none;
+}
+
+
 
 .card-img {
   width:  40%;
@@ -28,26 +70,10 @@
   margin-right: 25%;
 }
 
-.logo {
-  width: 60%;
-  display: block;
-  margin: 0 auto;
-}
 
-body {
-  color: papayawhip;
-  background-color: slategray;
-  font-family: "Josefin Slab", serif;
-}
-
-.card {
-  color: papayawhip;
-  height: 100%;
-  background-color: slategray;
-  align-content: center;
-  width: 100%;
-  flex-wrap: wrap;
-  border: none;
+.card-subtitle {
+  font-size: 200%;
+  margin-bottom: 5%;
 }
 
 .card-text {
@@ -57,19 +83,8 @@ body {
   margin-right: 10%;
 }
 
-a {
-  text-decoration: none;
-  color: papayawhip;
-  margin: 1em;
-  align-content: center;
-  font-size: 200%;
-}
-
-a:hover {
-  background-color: peachpuff;
-  color: slategray;
-  padding: 1%;
-  border-radius: 20px;
+.card-title {
+  font-size: 400%;
 }
 
 .formSubmit {
@@ -86,6 +101,35 @@ a:hover {
   color: slategray;
   border-radius: 20px;
   justify-content: center;
+}
+
+h3 {
+  display: inline;
+  margin-left: 2%;
+  font-size: 250%;
+}
+
+.homePage {
+  margin: 1%;
+  font-size: 400%;
+  margin-bottom: 0;
+}
+
+
+input {
+  background-color: papayawhip;
+  border-radius: 20px;
+  width: 25%;
+  height: 3rem;
+  border: none;
+  font-size: 200%;
+  text-align: center;
+}
+
+.logo {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
 }
 
 .navbar-nav {
@@ -98,20 +142,25 @@ a:hover {
   flex-wrap: nowrap;
 }
 
-input {
-  background-color: papayawhip;
-  border-radius: 20px;
-  width: 25%;
-  height: 3rem;
-  border: none;
-  font-size: 200%;
-  text-align: center;
+p {
+  display: flex;
+  justify-content: flex-end;
+  text-align: left;
+  margin-left: 2%;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+  width: 50%;
+  font-size: 150%;
 }
 
-.homePage {
-  margin: 1%;
+.startHeader {
   font-size: 400%;
-  margin-bottom: 0;
+  width: 90%;
+  display: flex;
+  margin-right: 20%;
+  margin-left: 2%;
+  margin-bottom: 4%;
+  margin-top: 1%;
 }
 
 .starterPage {
@@ -121,33 +170,6 @@ input {
   align-items: center;
 }
 
-.startHeader {
-  font-size: 400%;
-  width: 90%;
-  display: flex;
-  margin-right: 20%;
-  margin-left: 2%;
-  margin-bottom: 4%;
-  margin-top: 1%;
-}
-
-h3 {
-  display: inline;
-  margin-left: 2%;
-  font-size: 250%;
-}
-
-p {
-  display: flex;
-  justify-content: flex-end;
-  text-align: left;
-  margin-left: 2%;
-  margin-bottom: 5%;
-  flex-wrap: wrap;
-  width: 50%;
-  font-size: 150%;
-}
-
 .starterLink {
   display: inline-flex;
   justify-content: flex-start;
@@ -163,222 +185,777 @@ p {
   justify-content: center;
 }
 
-@media (min-width:  576px) {
+
+
+/* Start 350px query */
+@media (min-width:  350px) {
+
+  a {
+    text-decoration: none;
+    color: papayawhip;
+    margin: 1em;
+    align-content: center;
+    font-size: 100%;
+  }
+
+  a:hover {
+    background-color: peachpuff;
+    color: slategray;
+    padding: 1%;
+    border-radius: 10px;
+    height: 10%;
+  }
+
+  .App {
+    text-align: center;
+    width:  100%;
+  }
 
   body {
-   width: 150%;
-    margin: 10%;
+    color: papayawhip;
+    background-color: slategray;
+    font-family: "Josefin Slab", serif;
+  }
+
+  button {
+    text-decoration: none;
+    color: papayawhip;
+    background-color: slategray;
+    margin: 1em;
+    border:  none;
+    align-content: center;
+    font-size: 200%;
+  }
+
+  button:hover {
+    background-color: peachpuff;
+    color: slategray;
+    padding: 1%;
+    border-radius: 20px;
+  }
+
+
+  .card {
+    color: papayawhip;
+    height: 100%;
+    background-color: slategray;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    border: none;
+  }
+
+
+
+  .card-img {
+    width:  40%;
+    height: 30rem;
+    object-fit: contain;
+  }
+
+  .card-img-right {
+    width:  40%;
+    height: 30rem;
+    object-fit: contain;
+    display: inline;
+    margin-right: 25%;
+  }
+
+
+  .card-subtitle {
+    font-size: 200%;
+    margin-bottom: 5%;
+  }
+
+  .card-text {
+    display: inline-flex;
+    text-align: left;
+    width: 30%;
+    margin-right: 10%;
+  }
+
+  .card-title {
+    font-size: 400%;
+  }
+
+  .formSubmit {
+    text-decoration: none;
+    color: papayawhip;
+    background-color: slategray;
+    margin: 1em;
+    align-content: center;
+    font-size: 200%;
+  }
+
+  .formSubmit:hover {
+    background-color: peachpuff;
+    color: slategray;
+    border-radius: 20px;
+    justify-content: center;
+  }
+
+  h3 {
+    display: inline;
+    margin-left: 2%;
+    font-size: 250%;
   }
 
   .homePage {
-  margin: 1%;
-  font-size: 400%;
-  margin-bottom: 0;
+    margin: 1%;
+    font-size: 300%;
+    margin-bottom: 0;
+  }
+
+  input {
+    background-color: papayawhip;
+    border-radius: 20px;
+    width: 30%;
+    height: 2rem;
+    border: none;
+    font-size: 100%;
+    text-align: center;
+  }
+
+  .logo {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .navLink {
+    padding:  1%;
+    width: 20%;
+    flex-wrap: nowrap;
+  }
+
+  p {
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    width: 50%;
+    font-size: 150%;
+  }
+
+  .startHeader {
+    font-size: 400%;
+    width: 90%;
+    display: flex;
+    margin-right: 20%;
+    margin-left: 2%;
+    margin-bottom: 4%;
+    margin-top: 1%;
+  }
+
+  .starterPage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .starterLink {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 100%;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .starterLink:hover {
+    margin-right: 65%;
+    justify-content: center;
+  }
+
 }
 
-.navLink {
-  padding:  1%;
-  width: 30%;
-  flex-wrap: nowrap;
-}
 
 
 
 
 
-
-}
-
+/* Start 768px query */
 @media (min-width:  768px) {
 
-body {
-   width: 150%;
-    margin: 10%;
+  a {
+    text-decoration: none;
+    color: papayawhip;
+    margin: 1em;
+    align-content: center;
+    font-size: 200%;
+  }
+
+  a:hover {
+    background-color: peachpuff;
+    color: slategray;
+    padding: 1%;
+    border-radius: 20px;
+  }
+
+  .App {
+    text-align: center;
+    width:  100%;
+  }
+
+  body {
+    color: papayawhip;
+    background-color: slategray;
+    font-family: "Josefin Slab", serif;
+  }
+
+  button {
+    text-decoration: none;
+    color: papayawhip;
+    background-color: slategray;
+    margin: 1em;
+    border:  none;
+    align-content: center;
+    font-size: 200%;
+  }
+
+  button:hover {
+    background-color: peachpuff;
+    color: slategray;
+    padding: 1%;
+    border-radius: 20px;
+  }
+
+
+  .card {
+    color: papayawhip;
+    height: 100%;
+    background-color: slategray;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    border: none;
   }
 
 
 
+  .card-img {
+    width:  40%;
+    height: 30rem;
+    object-fit: contain;
+  }
+
+  .card-img-right {
+    width:  40%;
+    height: 30rem;
+    object-fit: contain;
+    display: inline;
+    margin-right: 25%;
+  }
 
 
+  .card-subtitle {
+    font-size: 200%;
+    margin-bottom: 5%;
+  }
+
+  .card-text {
+    display: inline-flex;
+    text-align: left;
+    width: 30%;
+    margin-right: 10%;
+  }
+
+  .card-title {
+    font-size: 400%;
+  }
+
+  .formSubmit {
+    text-decoration: none;
+    color: papayawhip;
+    background-color: slategray;
+    margin: 1em;
+    align-content: center;
+    font-size: 200%;
+  }
+
+  .formSubmit:hover {
+    background-color: peachpuff;
+    color: slategray;
+    border-radius: 20px;
+    justify-content: center;
+  }
+
+  h3 {
+    display: inline;
+    margin-left: 2%;
+    font-size: 250%;
+  }
+
+  .homePage {
+    margin: 1%;
+    font-size: 400%;
+    margin-bottom: 0;
+  }
+
+
+  input {
+    background-color: papayawhip;
+    border-radius: 20px;
+    width: 25%;
+    height: 3rem;
+    border: none;
+    font-size: 200%;
+    text-align: center;
+  }
+
+  .logo {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .navLink {
+    padding:  1%;
+    width: 20%;
+    flex-wrap: nowrap;
+  }
+
+  p {
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    width: 50%;
+    font-size: 150%;
+  }
+
+  .startHeader {
+    font-size: 400%;
+    width: 90%;
+    display: flex;
+    margin-right: 20%;
+    margin-left: 2%;
+    margin-bottom: 4%;
+    margin-top: 1%;
+  }
+
+  .starterPage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .starterLink {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 100%;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .starterLink:hover {
+    margin-right: 65%;
+    justify-content: center;
+  }
 
 }
 
+
+
+
+/* Start 992px query */
 @media (min-width:  992px) {
 
+  a {
+    text-decoration: none;
+    color: papayawhip;
+    margin: 1em;
+    align-content: center;
+    font-size: 200%;
+  }
 
-
-
-
-
-
-
-}
-
-@media (min-width:  1200px) {
+  a:hover {
+    background-color: peachpuff;
+    color: slategray;
+    padding: 1%;
+    border-radius: 20px;
+  }
 
   .App {
-  text-align: center;
+    text-align: center;
+    width:  100%;
+  }
+
+  body {
+    color: papayawhip;
+    background-color: slategray;
+    font-family: "Josefin Slab", serif;
+  }
+
+  button {
+    text-decoration: none;
+    color: papayawhip;
+    background-color: slategray;
+    margin: 1em;
+    border:  none;
+    align-content: center;
+    font-size: 200%;
+  }
+
+  button:hover {
+    background-color: peachpuff;
+    color: slategray;
+    padding: 1%;
+    border-radius: 20px;
+  }
+
+
+  .card {
+    color: papayawhip;
+    height: 100%;
+    background-color: slategray;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    border: none;
+  }
+
+
+
+  .card-img {
+    width:  40%;
+    height: 30rem;
+    object-fit: contain;
+  }
+
+  .card-img-right {
+    width:  40%;
+    height: 30rem;
+    object-fit: contain;
+    display: inline;
+    margin-right: 25%;
+  }
+
+
+  .card-subtitle {
+    font-size: 200%;
+    margin-bottom: 5%;
+  }
+
+  .card-text {
+    display: inline-flex;
+    text-align: left;
+    width: 30%;
+    margin-right: 10%;
+  }
+
+  .card-title {
+    font-size: 400%;
+  }
+
+  .formSubmit {
+    text-decoration: none;
+    color: papayawhip;
+    background-color: slategray;
+    margin: 1em;
+    align-content: center;
+    font-size: 200%;
+  }
+
+  .formSubmit:hover {
+    background-color: peachpuff;
+    color: slategray;
+    border-radius: 20px;
+    justify-content: center;
+  }
+
+  h3 {
+    display: inline;
+    margin-left: 2%;
+    font-size: 250%;
+  }
+
+  .homePage {
+    margin: 1%;
+    font-size: 400%;
+    margin-bottom: 0;
+  }
+
+
+  input {
+    background-color: papayawhip;
+    border-radius: 20px;
+    width: 25%;
+    height: 3rem;
+    border: none;
+    font-size: 200%;
+    text-align: center;
+  }
+
+  .logo {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .navLink {
+    padding:  1%;
+    width: 20%;
+    flex-wrap: nowrap;
+  }
+
+  p {
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    width: 50%;
+    font-size: 150%;
+  }
+
+  .startHeader {
+    font-size: 400%;
+    width: 90%;
+    display: flex;
+    margin-right: 20%;
+    margin-left: 2%;
+    margin-bottom: 4%;
+    margin-top: 1%;
+  }
+
+  .starterPage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .starterLink {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 100%;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .starterLink:hover {
+    margin-right: 65%;
+    justify-content: center;
+  }
+
 }
 
-.card-title {
-  font-size: 400%;
-}
 
-.card-subtitle {
-  font-size: 200%;
-  margin-bottom: 5%;
-}
 
-.card-img {
-  width:  40%;
-  height: 30rem;
-  object-fit: contain;
-}
 
-.card-img-right {
-  width:  40%;
-  height: 30rem;
-  object-fit: contain;
-  display: inline;
-  margin-right: 25%;
-}
 
-.logo {
-  width: 60%;
-  display: block;
-  margin: 0 auto;
-}
 
-body {
-  color: papayawhip;
-  background-color: slategray;
-  font-family: "Josefin Slab", serif;
-  width: 90%;
-  height: 70%;
-  margin: auto 0;
-}
 
-.card {
-  color: papayawhip;
-  height: 200%;
-  background-color: slategray;
-  align-content: center;
-  margin-left: 15%;
-  width: 80%;
-  flex-wrap: wrap;
-}
-
-.card-text {
-  display: inline-flex;
-  text-align: left;
-  width: 30%;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-
-a {
+/* Start 1200px query */
+@media (min-width:  1200px) {
+  a {
   text-decoration: none;
   color: papayawhip;
   margin: 1em;
   align-content: center;
   font-size: 200%;
-}
+  }
 
-a:hover {
-  background-color: peachpuff;
-  color: slategray;
-  padding: 1%;
-  border-radius: 20px;
-}
+  a:hover {
+    background-color: peachpuff;
+    color: slategray;
+    padding: 1%;
+    border-radius: 20px;
+  }
 
-.formSubmit {
-  text-decoration: none;
-  color: papayawhip;
-  background-color: slategray;
-  margin: 1em;
-  align-content: center;
-  font-size: 200%;
-}
+  .App {
+    text-align: center;
+    width:  100%;
+  }
 
-.formSubmit:hover {
-  background-color: peachpuff;
-  color: slategray;
-  border-radius: 20px;
-  justify-content: center;
-}
+  body {
+    color: papayawhip;
+    background-color: slategray;
+    font-family: "Josefin Slab", serif;
+  }
 
-.navLink {
-  padding:  1%;
-  width: 20rem;
-  flex-wrap: nowrap;
-}
+  button {
+    text-decoration: none;
+    color: papayawhip;
+    background-color: slategray;
+    margin: 1em;
+    border:  none;
+    align-content: center;
+    font-size: 200%;
+  }
 
-input {
-  background-color: papayawhip;
-  border-radius: 20px;
-  width: 25%;
-  height: 3rem;
-  border: none;
-  font-size: 200%;
-  text-align: center;
-}
+  button:hover {
+    background-color: peachpuff;
+    color: slategray;
+    padding: 1%;
+    border-radius: 20px;
+  }
 
-.homePage {
-  margin: 1%;
-  font-size: 400%;
-  margin-bottom: 0;
-}
 
-.starterPage {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.startHeader {
-  font-size: 400%;
-  width: 90%;
-  display: flex;
-  margin-right: 20%;
-  margin-left: 2%;
-  margin-bottom: 4%;
-  margin-top: 1%;
-}
-
-h3 {
-  display: inline;
-  margin-left: 2%;
-  font-size: 250%;
-}
-
-p {
-  display: flex;
-  justify-content: flex-end;
-  text-align: left;
-  margin-left: 2%;
-  margin-bottom: 5%;
-  flex-wrap: wrap;
-  width: 50%;
-  font-size: 150%;
-}
-
-.starterLink {
-  display: inline-flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  width: 100%;
-  font-size: 100%;
-  margin: 0;
-  font-weight: bold;
-}
-
-.starterLink:hover {
-  margin-right: 65%;
-  justify-content: center;
-}
+  .card {
+    color: papayawhip;
+    height: 100%;
+    background-color: slategray;
+    align-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    border: none;
+  }
 
 
 
+  .card-img {
+    width:  40%;
+    height: 30rem;
+    object-fit: contain;
+  }
 
+  .card-img-right {
+    width:  40%;
+    height: 30rem;
+    object-fit: contain;
+    display: inline;
+    margin-right: 25%;
+  }
+
+
+  .card-subtitle {
+    font-size: 200%;
+    margin-bottom: 5%;
+  }
+
+  .card-text {
+    display: inline-flex;
+    text-align: left;
+    width: 30%;
+    margin-right: 10%;
+  }
+
+  .card-title {
+    font-size: 400%;
+  }
+
+  .formSubmit {
+    text-decoration: none;
+    color: papayawhip;
+    background-color: slategray;
+    margin: 1em;
+    align-content: center;
+    font-size: 200%;
+  }
+
+  .formSubmit:hover {
+    background-color: peachpuff;
+    color: slategray;
+    border-radius: 20px;
+    justify-content: center;
+  }
+
+  h3 {
+    display: inline;
+    margin-left: 2%;
+    font-size: 250%;
+  }
+
+  .homePage {
+    margin: 1%;
+    font-size: 400%;
+    margin-bottom: 0;
+  }
+
+
+  input {
+    background-color: papayawhip;
+    border-radius: 20px;
+    width: 25%;
+    height: 3rem;
+    border: none;
+    font-size: 200%;
+    text-align: center;
+  }
+
+  .logo {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .navLink {
+    padding:  1%;
+    width: 20%;
+    flex-wrap: nowrap;
+  }
+
+  p {
+    display: flex;
+    justify-content: flex-end;
+    text-align: left;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    width: 50%;
+    font-size: 150%;
+  }
+
+  .startHeader {
+    font-size: 400%;
+    width: 90%;
+    display: flex;
+    margin-right: 20%;
+    margin-left: 2%;
+    margin-bottom: 4%;
+    margin-top: 1%;
+  }
+
+  .starterPage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .starterLink {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 100%;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .starterLink:hover {
+    margin-right: 65%;
+    justify-content: center;
+  }
+ 
 }

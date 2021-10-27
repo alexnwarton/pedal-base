@@ -74,14 +74,16 @@ function App() {
       </Navbar>
 
       <Route path="/" exact>
-        <h1 className="homePage">Pedal Base</h1>
-        <img className="logo" src="https://i.imgur.com/nLVUKXN.png" alt="Pedal Base icon"/>
-        <input type="text" placeholder="Search Pedals" value={query} onChange={(ev) => searchPedals(ev.target.value)}/>
-         <Link to="/pedal-list/search-results">
-          Search
-         </Link>
+        <div className="homeBody">
+          <h1 className="homePage">Pedal Base</h1>
+          <img className="logo" src="https://i.imgur.com/nLVUKXN.png" alt="Pedal Base icon"/>
+          <input type="text" placeholder="Search Pedals" value={query} onChange={(ev) => searchPedals(ev.target.value)}/>
+           <Link to="/pedal-list/search-results">
+            Search
+           </Link>
 
-        <Link to="pedal-list">Full Pedal List</Link>        
+          <Link to="pedal-list">Full Pedal List</Link>
+        </div>        
       </Route>
 
       <Route path="/pedal-list/search-results">
