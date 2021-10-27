@@ -4,6 +4,15 @@
   text-align: center;
 }
 
+.card-title {
+  font-size: 400%;
+}
+
+.card-subtitle {
+  font-size: 200%;
+  margin-bottom: 5%;
+}
+
 .card-img {
   width:  40%;
   height: 30rem;
@@ -14,6 +23,8 @@
   width:  40%;
   height: 30rem;
   object-fit: contain;
+  display: inline;
+  margin-right: 25%;
 }
 
 .logo {
@@ -30,8 +41,20 @@ body {
 
 .card {
   color: papayawhip;
-  height: 300rem;
+  height: 200%;
   background-color: slategray;
+  align-content: center;
+  margin-left: 15%;
+  /*border: none;*/
+  flex-wrap: wrap;
+}
+
+.card-text {
+  display: inline-flex;
+  text-align: left;
+  width: 30%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 a {
@@ -47,6 +70,22 @@ a:hover {
   color: slategray;
   padding: 1%;
   border-radius: 20px;
+}
+
+.formSubmit {
+  text-decoration: none;
+  color: papayawhip;
+  background-color: slategray;
+  margin: 1em;
+  align-content: center;
+  font-size: 200%;
+}
+
+.formSubmit:hover {
+  background-color: peachpuff;
+  color: slategray;
+  border-radius: 20px;
+  justify-content: center;
 }
 
 .navLink {

@@ -50,7 +50,7 @@ const PedalForm = () => {
 			<input type="text" placeholder="Pedal Image" onChange={(ev) => setImage(ev.target.value)}/>
 			<input type="text" placeholder="Pedal Description" onChange={(ev) => setDescription(ev.target.value)}/>
 			<input type="text" placeholder="Pedal Link" onChange={(ev) => setLink(ev.target.value)}/>
-			<input type="submit" value="Add Pedal"/>
+			<input className="formSubmit" type="submit" value="Add Pedal"/>
 
 		</form>
 

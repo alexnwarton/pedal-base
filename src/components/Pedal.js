@@ -48,13 +48,13 @@ const Pedal = () => {
 
 
 	return (
-		<Card style={{ width: "40rem" }}> {pedal ? 
+		<Card style={{ width: "80rem" }}> {pedal ? 
 
 			<Card.Body>
 				<Card.Title>{pedalManufacturer} {pedalName}</Card.Title>
-				<Card.Subtitle>{pedalType}</Card.Subtitle>
-				<Card.Img variant="right" style={{ width: "16rem" }} src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
+				<Card.Subtitle>Type: {pedalType}</Card.Subtitle>
 				<Card.Text>{pedalDescription}</Card.Text>
+				<Card.Img variant="right" style={{ width: "16rem" }} src={pedalImage} alt={`${pedalManufacturer} ${pedalName}`}/>
 				<Card.Link href={pedalLink}>See More</Card.Link>	
 			</Card.Body> : "loading"}
 			
