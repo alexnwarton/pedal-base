@@ -195,15 +195,17 @@ p {
     color: papayawhip;
     margin: 1em;
     align-content: center;
-    font-size: 100%;
+    font-size: 80%;
   }
 
   a:hover {
-    background-color: peachpuff;
+    background-color: none;
     color: slategray;
     padding: 1%;
     border-radius: 10px;
+    margin-right: 3%;
     height: 10%;
+    width: 80%;
   }
 
   .App {
@@ -244,8 +246,6 @@ p {
     flex-wrap: wrap;
     border: none;
   }
-
-
 
   .card-img {
     width:  40%;
@@ -295,9 +295,18 @@ p {
   }
 
   h3 {
-    display: inline;
-    margin-left: 2%;
-    font-size: 250%;
+    display: flex;
+    margin-left: 0%;
+    margin-bottom: 5%;
+    font-size: 175%;
+    width: 75%;
+    justify-content: center;
+  }
+
+   .homeBody {
+    margin: 1%;
+    font-size: 150%;
+    margin-bottom: 0;
   }
 
   .homePage {
@@ -312,43 +321,45 @@ p {
     width: 30%;
     height: 2rem;
     border: none;
-    font-size: 100%;
+    font-size: 70%;
     text-align: center;
   }
 
   .logo {
-    width: 60%;
-    display: block;
-    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
+
   }
 
   .navbar-nav {
-    width: 100%;
+    width: 25%;
   }
 
   .navLink {
     padding:  1%;
-    width: 20%;
+    width: 40%;
+    font-size: 150%;
     flex-wrap: nowrap;
   }
 
-  p {
+   p {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: left;
-    margin-left: 2%;
     margin-bottom: 5%;
     flex-wrap: wrap;
-    width: 50%;
-    font-size: 150%;
+    width: 75%;
+    font-size: 125%;
   }
 
   .startHeader {
-    font-size: 400%;
-    width: 90%;
+    font-size: 250%;
+    width: 100%;
     display: flex;
-    margin-right: 20%;
-    margin-left: 2%;
+    justify-content: center;
+    margin: auto 0;
     margin-bottom: 4%;
     margin-top: 1%;
   }
@@ -358,11 +369,14 @@ p {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto 0;
   }
 
   .starterLink {
     display: inline-flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     font-size: 100%;
@@ -371,8 +385,10 @@ p {
   }
 
   .starterLink:hover {
-    margin-right: 65%;
+    display: inline-flex;
     justify-content: center;
+    width: 100%;
+    margin: 0;
   }
 
 }
@@ -489,9 +505,12 @@ p {
   }
 
   h3 {
-    display: inline;
+    display: flex;
     margin-left: 2%;
+    margin-bottom: 2%;
     font-size: 250%;
+    width: 55%;
+    justify-content: center;
   }
 
   .homePage {
@@ -540,10 +559,10 @@ p {
 
   .startHeader {
     font-size: 400%;
-    width: 90%;
+    width: 100%;
     display: flex;
-    margin-right: 20%;
-    margin-left: 2%;
+    justify-content: center;
+    margin: auto 0;
     margin-bottom: 4%;
     margin-top: 1%;
   }
@@ -553,11 +572,14 @@ p {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: auto 0;
   }
 
   .starterLink {
     display: inline-flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     font-size: 100%;
