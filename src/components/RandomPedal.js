@@ -11,6 +11,7 @@ const RandomPedal = ({ pedals }) => {
 	const [pedalLink, setPedalLink] = useState("");
 	const [pedalModel, setPedalModel] = useState("");
 
+
 	useEffect(() => {
 		const getRandomPedal = (pedals) => {
 		let randomNum = Math.floor(Math.random() * pedals.length - 1);
@@ -29,7 +30,7 @@ const RandomPedal = ({ pedals }) => {
 				setPedalModel(selectedRandom.fields.model);
 			}
 		}
-	}, [pedals])
+	}, [pedals.length])
 
 	
 	const getAnotherPedal = (pedals) => {
@@ -51,8 +52,6 @@ const RandomPedal = ({ pedals }) => {
 			}
 		}
 	}
-	
-
 	
 	return (
 		<Card> {pedals ? 

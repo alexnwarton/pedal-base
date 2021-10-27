@@ -9,7 +9,7 @@ const SearchList = ({ pedals }) => {
 			{pedals ? pedals.map((pedal) => (
 				<div className="searchResults" key={pedal.id}>
 					<Link key={pedal.id} to={`/pedal/${pedal.id}`}>
-						{pedal.fields.manufacturer}  {pedal.fields.name}
+						{pedal.fields.manufacturer} {pedal.fields.model} {pedal.fields.name} 
 						<br />
 					</Link>		
         		</div>	

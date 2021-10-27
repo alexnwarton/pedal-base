@@ -54,7 +54,7 @@ function App() {
       setPedals(resp.data.records); 
     }
     fetchPedals();
-  }, []);
+  }, [pedals]);
 
     return (
     <div className="App">
