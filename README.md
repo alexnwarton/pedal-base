@@ -2,7 +2,7 @@
 
 ## Project Description
 
-A collection of popular musical effects pedals that a user can view, add to, and explore. It will have a homepage with links to view the entire list or search for a specific pedal, a starter page with basic information on effects pedals, a pageto add a pedal, and a page to pull a random pedal from the list and return it. There will also be links to each individual pedal that is accessed from the list.
+A collection of popular musical effects pedals that a user can view, add to, and explore. It has a homepage with links to view the entire list or search for a specific pedal, a starter page with basic information on effects pedals, a page to add a pedal, and a page to pull a random pedal from the list and return it. There are links to each individual pedal that is in the database.
 
 ## Wireframes
 ![Mobile Wireframe](assets/wireframe-mobile.png)
@@ -25,7 +25,7 @@ A collection of popular musical effects pedals that a user can view, add to, and
 - Home page
 - A page showing all pedals in the database
 - Starter page with some background information
-- A search page returning results of a user search
+- A search page returning results of a user search using [fuse.js](https://fusejs.io/).
 - A form page to add a pedal to the list
 - A random pedal generator page
 - A page for each pedal in the database
@@ -52,17 +52,17 @@ Day | Goal
 
 ## Timeframes
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding data | H | 4hrs|  |  |
-| Creating home and starter pages | H | 2hrs|  |  |
-| Working with API for basic list| H | 2hrs|  |  |
-| Adding search feature | H | 2hrs|  |  |
-| Adding pedal components| H | 2hrs|  |  |
-| Adding forms | H | 3hrs|  |  |
-| Working with API for random generator| H | 2hrs|  |  |
-| Styling | M | 6hrs|  |  |
-| Total | H | 23hrs| |  |
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: |
+| Adding data | H | 4hrs| 2.5hrs |
+| Creating home and starter pages | H | 2hrs| 3.5hrs |
+| Working with API for basic list| H | 2hrs| 2.5hrs |
+| Adding search feature | H | 2hrs| 4hrs |
+| Adding pedal components| H | 2hrs| 1.5hrs |
+| Adding forms | H | 3hrs| 1.5hrs |
+| Working with API for random generator| H | 2hrs| 3.5hrs |
+| Styling | M | 6hrs| 9hrs |
+| Total | H | 23hrs| 28hrs |
 
 
 
