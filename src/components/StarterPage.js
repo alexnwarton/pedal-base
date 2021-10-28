@@ -20,7 +20,7 @@ const StarterPage = () => {
 		</div>
 
 		<div className="commonEffects">
-			<h3>Common Effects</h3>
+			<h3 className="effectsHeader">Common Effects</h3>
 				<Accordion defaultActiveKey="0">
 				  <Accordion.Item eventKey="0">
 				    <Accordion.Header>View Effects</Accordion.Header>

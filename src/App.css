@@ -1146,16 +1146,65 @@ p {
   
 
 
+
+
+
+
+
+
+  .accordion {
+    display: flex;
+    width: 25%;
+    margin-left: 12%;
+  }
+
+  .accordion-item {
+    width: 70%;
+    background-color: slategray;
+    border: none;
+    margin-left: 25%;
+  }
+
+  .accordion-button {
+    background-color: papayawhip;
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  .accordion-button:hover {
+    background-color: papayawhip;
+    width: 90%;
+    height: 200%;
+  }
+
+  .accordion-button {
+    background-color: papayawhip;
+    width: 90%;
+  }
+
+  .accordion-button-collapsed:hover {
+    background-color: papayawhip;
+    width: 90%;
+  }
+
+
+  .effectsHeader {
+    float: right;
+    width: 50%;
+  }
+
   .commonEffects {
-    width: 100%;
-    float: center;
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: column;
     
   }
 
   ul {
     font-size: 250%;
     float: center;
-    margin-right: 25%;
+   
     list-style-type: none;
   }
 
