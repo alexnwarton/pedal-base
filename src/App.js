@@ -92,12 +92,6 @@ function App() {
 
       <Route path="/about" exact>
         <StarterPage />
-        <footer> 
-          <a className="githubLink" href="https://github.com/alexnwarton/pedal-base">
-            <img src="https://i.imgur.com/a91Qh9r.png" alt="github link"/>
-          </a>
-        </footer>
-
       </Route> 
 
       <Route path="/add-pedal" exact>
