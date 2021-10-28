@@ -1,28 +1,28 @@
-import { useEffect } from "react";
-const FavoritePedals = ({ pedal }) => {
+// import { useEffect, useState } from "react";
+// import FavoritesList from "./FavoritesList";
+// const FavoritePedals = (pedal) => {
+
+// 	const [favPedal, setFavPedal] = useState("");
 	
-	useEffect(() => {
-		console.log('Hi');
+// 	useEffect(() => {
+// 		const getLocalStorage = (pedal) => {
+// 			const favPedal = window.localStorage.getItem("pedal");
+// 			console.log(favPedal);
+// 			return favPedal;
+// 		}
+// 		setFavPedal(getLocalStorage(pedal));
 		
-	}, [])
+// 	}, [])
 
-	const setLocalStorage = (pedal) => {
-		window.localStorage.setItem("pedal", JSON.stringify({pedal}));
-	}
+	
 
-	const getLocalStorage = (pedal) => {
-		const tester = window.localStorage.getItem("pedal");
-		return tester;
-	}
-
-	return (
-		<div>
-			<button onClick={setLocalStorage(pedal)}>Favorite</button>
-			{/*<button onClick={console.log(getLocalStorage(pedal)) }>See Favs</button>*/}
-		</div>
+// 	return (
+// 		<div>
+// 			{favPedal ? <FavoritesList favPedal={favPedal}/> : "loading"}
+// 		</div>
 
 
-	)
-}
+// 	)
+// }
 
-export default FavoritePedals;
+// export default FavoritePedals;

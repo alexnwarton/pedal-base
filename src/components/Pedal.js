@@ -2,7 +2,6 @@ import axios from "axios";
 import Card from "react-bootstrap/Card";
 import { useParams } from "react-router-dom";
 import { useEffect, useState  } from "react";
-import FavoritePedals from "./FavoritePedals.js";
 
 const apiKey = process.env.REACT_APP_API_KEY;
 
@@ -48,8 +47,6 @@ const Pedal = () => {
 		
 
 	}, [pedal, pedalName])
-	
-	
 
 
 	return (
@@ -65,9 +62,7 @@ const Pedal = () => {
 				</div>
 				<br />
 				<Card.Link href={pedalLink}>See More</Card.Link>	
-			</Card.Body> : "loading"}
-			
-			<FavoritePedals pedal={pedal} />
+			</Card.Body> : "loading"}	
 		</Card>
 	)
 }

@@ -12,7 +12,6 @@ import Pedal from "./components/Pedal.js";
 import { useEffect, useState } from "react";
 import { Link, Route } from "react-router-dom";
 import SearchList from "./components/SearchList.js"
-import FavoritePedals from "./components/FavoritePedals.js";
 
 
 
@@ -117,10 +116,6 @@ function App() {
 
         </Route> 
 
-        <Route path="/favorites" exact>
-          <FavoritePedals pedals={pedals} />
-
-        </Route> 
     </div>
   );
 }
