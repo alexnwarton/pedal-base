@@ -6,6 +6,7 @@ import { useEffect, useState  } from "react";
 const apiKey = process.env.REACT_APP_API_KEY;
 
 const Pedal = () => {
+
 	const [pedal, setPedal] = useState([]);
 	const [pedalName, setPedalName] = useState("");
 	const [pedalManufacturer, setPedalManufacturer] = useState("");
@@ -17,7 +18,6 @@ const Pedal = () => {
 	let pedalId = useParams();
 
 	const apiUrl = `https://api.airtable.com/v0/appCDpBxh0nbdoKIN/Pedals/${pedalId.id}/?api_key=${apiKey}`;
-
 	
 	useEffect(() => {
 		const fetchPedals = async () => {
@@ -42,16 +42,12 @@ const Pedal = () => {
 
 			return pedalName;
 		}
-
-		populatePedal(pedal);
-		
-
+		populatePedal(pedal);	
 	}, [pedal, pedalName])
 
 
 	return (
 		<Card> {pedal ? 
-
 			<Card.Body>
 				<Card.Title>{pedalManufacturer} {pedalModel} {pedalName}</Card.Title>
 				<Card.Subtitle>Type: {pedalType}</Card.Subtitle>

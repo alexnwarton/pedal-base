@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
 import Card from "react-bootstrap/Card";
-
+import { useEffect, useState } from "react";
 
 const RandomPedal = ({ pedals }) => {
+
 	const [pedalName, setPedalName] = useState("");
 	const [pedalManufacturer, setPedalManufacturer] = useState("");
 	const [pedalType, setPedalType] = useState("");
@@ -56,7 +56,6 @@ const RandomPedal = ({ pedals }) => {
 	
 	return (
 		<Card> {pedals ? 
-
 			<Card.Body>
 				<Card.Title>{pedalManufacturer} {pedalModel} {pedalName}</Card.Title>
 				<Card.Subtitle>Type: {pedalType}</Card.Subtitle>
@@ -69,11 +68,7 @@ const RandomPedal = ({ pedals }) => {
 				<Card.Link href={pedalLink}>See More</Card.Link>
 				<button onClick={() => getAnotherPedal(pedals)}>Get another pedal</button>	
 			</Card.Body> : "loading"}
-				
-		
 		</Card>
-
-
 	)
 }
 

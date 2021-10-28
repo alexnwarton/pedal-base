@@ -62,9 +62,7 @@ const PedalForm = () => {
 			<label>Pedal Link: </label>
 			<input className="formInput" type="url" placeholder="Pedal Link" onChange={(ev) => setLink(ev.target.value)}/>
 			<input className="formSubmit" type="submit" value="Add Pedal"/>
-
 		</form>
-
 	)
 }
 

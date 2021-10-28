@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 const SearchList = ({ pedals }) => {
 
 	return (
-
 		<div>
 			<h1 className="searchHeader">Search Results</h1>
 			{pedals ? pedals.map((pedal) => (

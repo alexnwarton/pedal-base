@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 const PedalList = ({ pedals }) => {
 
 	return (
-
 		<div className="pedalList">
 			<h1 className="listHeader">All Pedals</h1>
 			{pedals ? pedals.map((pedal) => (

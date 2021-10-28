@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
 import Accordion from "react-bootstrap/Accordion";
-const StarterPage = () => {
-	return (
+import { Link } from "react-router-dom";
 
+const StarterPage = () => {
+
+	return (
 		<div>
 			<div className="starterPage">
 				<h1 className="startHeader">About Pedal Base</h1>
@@ -15,10 +16,8 @@ const StarterPage = () => {
 				<br />
 				<br />
 				<Link to="/add-pedal" className="starterLink"> Get started Here</Link></p>
-
-
-				
 			</div>
+
 			<footer> 
 		         <a className="githubLink" href="https://github.com/alexnwarton/pedal-base">
 		           <img src="https://i.imgur.com/a91Qh9r.png" alt="github link"/>
@@ -30,19 +29,16 @@ const StarterPage = () => {
 				  <Accordion.Item eventKey="0">
 				    <Accordion.Header>Common Effects</Accordion.Header>
 				    <Accordion.Body>
-				     <ul>
+				    	<ul>
 							<li><a href="https://en.wikipedia.org/wiki/Distortion_(music)">Distortion</a></li>
 							<li><a href="https://en.wikipedia.org/wiki/Chorus_(audio_effect)">Chorus</a></li>
 							<li><a href="https://en.wikipedia.org/wiki/Phaser_(effect)">Phaser</a></li>
 							<li><a href="https://en.wikipedia.org/wiki/Delay_(audio_effect)">Delay</a></li>
 							<li><a href="https://en.wikipedia.org/wiki/Reverb_effect">Reverb</a></li>
-							
 						</ul>
 				    </Accordion.Body>
 				  </Accordion.Item>
-				 
 				</Accordion>
-				
 			</div>
 		</div>
 	)

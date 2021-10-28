@@ -17,10 +17,11 @@ const apiKey = process.env.REACT_APP_API_KEY;
 const apiUrl = `https://api.airtable.com/v0/appCDpBxh0nbdoKIN/Pedals?api_key=${apiKey}`;
 
 function App() {
-  const [pedals, setPedals] = useState([]);
-  const [query, setQuery] = useState("");
-    
 
+  const [pedals, setPedals] = useState([]);
+  const [query, setQuery] = useState(""); 
+
+  // Implementing fuse.js search function
   const fuse = new Fuse(pedals, {
     keys: [
     "id", 
@@ -33,19 +34,19 @@ function App() {
 
   const results = fuse.search(query);
 
-  const pushPedals = [];
+  const foundPedals = [];
     results.map((result) => {
       if(result.score <= 0.1){
-        pushPedals.push(result.item);   
+        foundPedals.push(result.item);   
       }
-      return pushPedals;
+      return foundPedals;
     })
 
   const searchPedals = (ev) => {
     setQuery(ev);
   }
   
-
+  // Fetching pedals from Airtable
   useEffect(() => {
     const fetchPedals = async () => {
       const resp = await axios.get(apiUrl);
@@ -53,7 +54,6 @@ function App() {
     }
     fetchPedals();
   }, [pedals]);
-
 
   return (
     <div className="App">
@@ -77,7 +77,7 @@ function App() {
       </Route>
 
       <Route path="/pedal-list/search-results">
-        <SearchList pedals={pushPedals} key={pushPedals.id}/>
+        <SearchList pedals={foundPedals} key={foundPedals.id}/>
       </Route>
 
       <Route path="/about" exact>
@@ -100,7 +100,7 @@ function App() {
         <Pedal />
       </Route> 
     </div>
-  );
+  )
 }
 
 export default App;
