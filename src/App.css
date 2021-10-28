@@ -314,7 +314,7 @@ p {
 
   footer {
     margin-right: 1%;
-    margin-bottom: 2%;
+    margin-top: 20%;
   }
 
   form {
@@ -467,6 +467,72 @@ p {
     margin: 0;
   }
 
+  .accordion {
+    display: flex;
+    justify-content: flex-start;
+    width: 130%;
+  }
+
+  .accordion-item {
+    width: 100%;
+    background-color: slategray;
+    border: none;
+    margin-left: -55%;
+  }
+
+  .accordion-button {
+    background-color: papayawhip;
+    color: slategray;
+    width: 130%;
+    margin-left: 10%;
+    font-size: 100%;
+  }
+
+  .accordion-button:hover {
+    background-color: papayawhip;
+    width: 130%;
+    height: 200%;
+  }
+
+  .accordion-button[aria-expanded="true"] {
+    background-color: papayawhip;
+    color: slategray;
+    width: 130%;
+  }
+
+  .accordion-button-collapsed:hover {
+    background-color: papayawhip;
+    width: 90%;
+  }
+
+
+  .effectsHeader {
+    float: right;
+    width: 50%;
+  }
+
+  .commonEffects {
+    width: 40%;
+    float: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -35%;
+    margin-left: 40%;
+    font-size: 150%;
+    
+  }
+
+  ul {
+    font-size: 250%;
+    float: center;
+    list-style-type: none;
+  }
+
+  li {
+    font-size: 40%;
+    margin-left: 40%;
+  }
+
 }
 
 
@@ -563,6 +629,11 @@ p {
 
   .card-title {
     font-size: 350%;
+  }
+
+  footer {
+    margin-top: 15%;
+    margin-left: 1%;
   }
 
   .formSubmit {
@@ -667,6 +738,72 @@ p {
   .starterLink:hover {
     margin-right: 65%;
     justify-content: center;
+  }
+
+  .accordion {
+    display: flex;
+    justify-content: flex-start;
+    width: 110%;
+    margin-left: 0%;
+  }
+
+  .accordion-item {
+    width: 100%;
+    background-color: slategray;
+    border: none;
+    margin-left: -50%;
+  }
+
+  .accordion-button {
+    background-color: papayawhip;
+    color: slategray;
+    width: 90%;
+    margin-left: 10%;
+    font-size: 100%;
+  }
+
+  .accordion-button:hover {
+    background-color: papayawhip;
+    width: 90%;
+    height: 200%;
+  }
+
+  .accordion-button[aria-expanded="true"] {
+    background-color: papayawhip;
+    color: slategray;
+    width: 90%;
+  }
+
+  .accordion-button-collapsed:hover {
+    background-color: papayawhip;
+    width: 90%;
+  }
+
+
+  .effectsHeader {
+    float: right;
+    width: 50%;
+  }
+
+  .commonEffects {
+    width: 40%;
+    float: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -30%;
+    margin-left: 50%;
+    
+  }
+
+  ul {
+    font-size: 250%;
+    float: center;
+    list-style-type: none;
+  }
+
+  li {
+    font-size: 40%;
+    margin-left: 5%;
   }
 
 }
@@ -891,21 +1028,70 @@ p {
 
 
 
-  .commonEffects {
-    width: 100%;
+   .accordion {
     display: flex;
-    
+    width: 90%;
+    margin-left: 0%;
+  }
+
+  .accordion-item {
+    width: 100%;
+    background-color: slategray;
+    border: none;
+    margin-left: 12%;
+  }
+
+  .accordion-button {
+    background-color: papayawhip;
+    color: slategray;
+    width: 90%;
+    margin-left: 10%;
+    font-size: 100%;
+  }
+
+  .accordion-button:hover {
+    background-color: papayawhip;
+    width: 90%;
+    height: 200%;
+  }
+
+  .accordion-button[aria-expanded="true"] {
+    background-color: papayawhip;
+    color: slategray;
+    width: 90%;
+  }
+
+  .accordion-button-collapsed:hover {
+    background-color: papayawhip;
+    width: 90%;
+  }
+
+
+  .effectsHeader {
+    float: right;
+    width: 50%;
+  }
+
+  .commonEffects {
+    width: 40%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
+    margin-right: 10%;
   }
 
   ul {
     font-size: 250%;
-    
+    float: center;
     list-style-type: none;
   }
 
   li {
     font-size: 40%;
+    margin-left: 5%;
   }
+
 
 
 
