@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import Accordion from "react-bootstrap/Accordion";
 const StarterPage = () => {
 	return (
 
+		<div>
 		<div className="starterPage">
 			<h1 className="startHeader">About Pedal Base</h1>
 			<h3>What is Pedal Base?</h3>
@@ -14,19 +16,28 @@ const StarterPage = () => {
 			<br />
 			<Link to="/add-pedal" className="starterLink"> Get started Here</Link></p>
 
-			<div className="commonEffects">
-				<ul>Common Effects
-					<li><a href="https://en.wikipedia.org/wiki/Distortion_(music)">Distortion</a></li>
-					<br />
-					<li><a href="https://en.wikipedia.org/wiki/Chorus_(audio_effect)">Chorus</a></li>
-					<br />
-					<li><a href="https://en.wikipedia.org/wiki/Phaser_(effect)">Phaser</a></li>
-					<br />
-					<li><a href="https://en.wikipedia.org/wiki/Delay_(audio_effect)">Delay</a></li>
-					<br />
-					<li><a href="https://en.wikipedia.org/wiki/Reverb_effect">Reverb</a></li>
-					
-				</ul>
+			
+		</div>
+
+		<div className="commonEffects">
+			<h3>Common Effects</h3>
+				<Accordion defaultActiveKey="0">
+				  <Accordion.Item eventKey="0">
+				    <Accordion.Header>View Effects</Accordion.Header>
+				    <Accordion.Body>
+				     <ul>
+							<li><a href="https://en.wikipedia.org/wiki/Distortion_(music)">Distortion</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Chorus_(audio_effect)">Chorus</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Phaser_(effect)">Phaser</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Delay_(audio_effect)">Delay</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/Reverb_effect">Reverb</a></li>
+							
+						</ul>
+				    </Accordion.Body>
+				  </Accordion.Item>
+				 
+				</Accordion>
+				
 			</div>
 		</div>
 	)
