@@ -1006,7 +1006,7 @@ p {
   }
 
   footer {
-    margin-top: 70%;
+    margin-top: 40%;
     display: flex;
     justify-content: flex-end;
     float: right;
@@ -1140,9 +1140,9 @@ p {
   }
 
   .starterLink:hover {
-    margin-right: 65%;
+    margin-right: 15%;
     justify-content: center;
-    width: 15%;
+    width: 20%;
   }
   
 
@@ -1202,7 +1202,7 @@ p {
     float: right;
     display: flex;
     flex-direction: column;
-    margin-top: -75%;
+    margin-top: -43%;
     margin-left: 50%;
     
   }
