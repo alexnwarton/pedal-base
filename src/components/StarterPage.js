@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Distortion from "./Distortion.js";
 
 const StarterPage = () => {
 	return (
@@ -14,6 +15,25 @@ const StarterPage = () => {
 			<br />
 			<br />
 			<Link to="/add-pedal" className="starterLink"> Get started Here</Link></p>
+
+			<div className="commonEffects">
+				<ul>Common Effects
+					<li><Link to="/about/distortion">Distortion</Link></li>
+					
+					<li><Link to="/about/overdrive">Overdrive</Link></li>
+					
+					<li><Link to="/about/fuzz">Fuzz</Link></li>
+				
+					<li><Link to="/about/chorus">Chorus</Link></li>
+					
+					<li><Link to="/about/phaser">Phaser</Link></li>
+					
+					<li><Link to="/about/delay">Delay</Link></li>
+					
+					<li><Link to="/about/reverb">Reverb</Link></li>
+					
+				</ul>
+			</div>
 		</div>
 	)
 }

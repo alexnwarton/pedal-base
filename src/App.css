@@ -201,6 +201,25 @@ p {
 
 
 
+
+
+
+
+.commonEffects {
+  width: 100%;
+  float: right;
+}
+
+.distortionContainer {
+  width: 100%;
+}
+
+
+
+
+
+
+
 /* Start 350px query */
 @media (min-width:  350px) {
 
