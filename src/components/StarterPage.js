@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import Distortion from "./Distortion.js";
-
 const StarterPage = () => {
 	return (
 
@@ -18,19 +16,15 @@ const StarterPage = () => {
 
 			<div className="commonEffects">
 				<ul>Common Effects
-					<li><Link to="/about/distortion">Distortion</Link></li>
-					
-					<li><Link to="/about/overdrive">Overdrive</Link></li>
-					
-					<li><Link to="/about/fuzz">Fuzz</Link></li>
-				
-					<li><Link to="/about/chorus">Chorus</Link></li>
-					
-					<li><Link to="/about/phaser">Phaser</Link></li>
-					
-					<li><Link to="/about/delay">Delay</Link></li>
-					
-					<li><Link to="/about/reverb">Reverb</Link></li>
+					<li><a href="https://en.wikipedia.org/wiki/Distortion_(music)">Distortion</a></li>
+					<br />
+					<li><a href="https://en.wikipedia.org/wiki/Chorus_(audio_effect)">Chorus</a></li>
+					<br />
+					<li><a href="https://en.wikipedia.org/wiki/Phaser_(effect)">Phaser</a></li>
+					<br />
+					<li><a href="https://en.wikipedia.org/wiki/Delay_(audio_effect)">Delay</a></li>
+					<br />
+					<li><a href="https://en.wikipedia.org/wiki/Reverb_effect">Reverb</a></li>
 					
 				</ul>
 			</div>
