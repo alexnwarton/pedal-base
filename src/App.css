@@ -43,7 +43,6 @@ button:hover {
   border-radius: 20px;
 }
 
-
 .card {
   color: papayawhip;
   height: 100%;
@@ -54,13 +53,6 @@ button:hover {
   border: none;
 }
 
-
-.card-img {
-  width:  40%;
-  height: 30rem;
-  object-fit: contain;
-}
-
 .card-img-right {
   width:  40%;
   height: 30rem;
@@ -68,7 +60,6 @@ button:hover {
   display: inline;
   margin-right: 25%;
 }
-
 
 .card-subtitle {
   font-size: 200%;
@@ -121,7 +112,6 @@ h3 {
   font-size: 400%;
   margin-bottom: 0;
 }
-
 
 input {
   background-color: papayawhip;
@@ -197,18 +187,6 @@ p {
   margin-right: 65%;
   justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Start 350px query */
@@ -467,6 +445,7 @@ p {
     margin: 0;
   }
 
+ /* Accordion specifics*/
   .accordion {
     display: flex;
     justify-content: flex-start;
@@ -505,7 +484,6 @@ p {
     width: 90%;
   }
 
-
   .effectsHeader {
     float: right;
     width: 50%;
@@ -534,11 +512,6 @@ p {
   }
 
 }
-
-
-
-
-
 
 /* Start 768px query */
 @media (min-width:  768px) {
@@ -667,7 +640,6 @@ p {
     margin-bottom: 0;
   }
 
-
   input {
     background-color: papayawhip;
     border-radius: 20px;
@@ -740,6 +712,7 @@ p {
     justify-content: center;
   }
 
+  /* Accordion specifics*/
   .accordion {
     display: flex;
     justify-content: flex-start;
@@ -807,8 +780,6 @@ p {
   }
 
 }
-
-
 
 
 /* Start 992px query */
@@ -1026,8 +997,7 @@ p {
     justify-content: center;
   }
 
-
-
+  /* Accordion specifics*/
    .accordion {
     display: flex;
     width: 90%;
@@ -1091,17 +1061,7 @@ p {
     font-size: 40%;
     margin-left: 5%;
   }
-
-
-
-
 }
-
-
-
-
-
-
 
 /* Start 1200px query */
 @media (min-width:  1200px) {
@@ -1331,14 +1291,7 @@ p {
     width: 20%;
   }
   
-
-
-
-
-
-
-
-
+  /* Accordion specifics*/
   .accordion {
     display: flex;
     width: 90%;
@@ -1404,6 +1357,4 @@ p {
     font-size: 40%;
     margin-left: 5%;
   }
-
-
 }
