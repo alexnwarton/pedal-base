@@ -1,0 +1,21 @@
+import { Link } from "react-router-dom";
+
+const FavoritesList = ({ pedals }) => {
+
+	return (
+
+		<div className="pedalList">
+			<h1 className="listHeader">All Pedals</h1>
+			{pedals ? pedals.map((pedal) => (
+				<div className="listResults" key={pedal.id}>
+					<Link key={pedal.id} to={`/pedal/${pedal.id}`}>
+						{pedal.fields.manufacturer}  {pedal.fields.name}
+						<br />
+					</Link>		
+        		</div>	
+			)) : ""}
+		</div>
+	)
+}
+
+export default FavoritesList;

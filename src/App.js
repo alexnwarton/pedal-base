@@ -12,6 +12,7 @@ import Pedal from "./components/Pedal.js";
 import { useEffect, useState } from "react";
 import { Link, Route } from "react-router-dom";
 import SearchList from "./components/SearchList.js"
+import FavoritePedals from "./components/FavoritePedals.js";
 
 
 
@@ -83,6 +84,7 @@ function App() {
            </Link>
 
           <Link to="pedal-list">Full Pedal List</Link>
+          <Link to="/favorites" className="navLink">Favorites</Link>
         </div>        
       </Route>
 
@@ -112,6 +114,11 @@ function App() {
 
         <Route path="/pedal/:id" exact>
           <Pedal />
+
+        </Route> 
+
+        <Route path="/favorites" exact>
+          <FavoritePedals pedals={pedals} />
 
         </Route> 
     </div>

@@ -26,7 +26,7 @@ const StarterPage = () => {
 		      </footer>
 
 			<div className="commonEffects">
-				<Accordion defaultActiveKey="0">
+				<Accordion defaultActiveKey="1">
 				  <Accordion.Item eventKey="0">
 				    <Accordion.Header>Common Effects</Accordion.Header>
 				    <Accordion.Body>
