@@ -18,7 +18,7 @@ const RandomPedal = ({ pedals }) => {
 		let selectedPedal = pedals[randomNum];
 		return selectedPedal;
 	}
-		if(pedals.length > 0 ){
+		if(pedals.length > 0){
 			let selectedRandom = getRandomPedal(pedals);
 			setPedalName(selectedRandom.fields.name);
 			setPedalManufacturer(selectedRandom.fields.manufacturer);
@@ -30,6 +30,7 @@ const RandomPedal = ({ pedals }) => {
 				setPedalModel(selectedRandom.fields.model);
 			}
 		}
+		return;
 	}, [pedals.length])
 
 	
