@@ -1,6 +1,6 @@
 # Pedal-Base
 
-[Pedal Base](https://pensive-bardeen-3c546a.netlify.app/)
+[Pedal Base](https://pedal-base.netlify.app/)
 
 ## Project Description
 
